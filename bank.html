@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('https://media.istockphoto.com/id/1282562204/photo/woman-at-home-sofa-sitting-stock-photo.jpg?s=2048x2048&w=is&k=20&c=ZwRk72SThyr5XG6xUcNorBLdGcroYhYg7TQ-Ae5tImw=') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #ffffff;
+    }
+
+    .intro {
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        text-align: center;
+    }
+    .container h2{
+           margin-bottom: 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;    
+    }
+   
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: calc(100% - 22px);
+        box-sizing: border-box;
+        font-size: 16px;
+        transition: border-color 0.3s;
+        color: black; /* Added this line */
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+
+    .links a {
+        color: #007bff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="intro">
+        <h1>Welcome to BANDI BANK</h1>
+    </div>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="Login" method="post">
+            <input type="text" placeholder="Enter name" name="uname" required>
+            <br>
+            <input type="password" placeholder="Enter password" name="upass" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+         <a href="create_account.jsp">Create Account</a>
+         <span>|</span>
+        <a href="forgotpass.jsp">Forgot Password?</a>
+    </div>
+</body>
+</html>
